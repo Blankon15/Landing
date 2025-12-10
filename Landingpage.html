@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>eKomunikasi — Construction Inprogress</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#ffffff; --accent:#000; }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    body{background:var(--bg);color:var(--accent);display:flex;align-items:center;justify-content:center}
+
+    .container{max-width:1100px;width:100%;padding:48px 24px;text-align:center}
+
+    .brand-row{display:flex;align-items:center;justify-content:center;gap:28px}
+    .logo-left{display:flex;align-items:center;gap:18px}
+    .logo-left img{height:86px;object-fit:contain}
+    .crest{height:94px;object-fit:contain}
+
+    /* big headline style that matches the sample */
+    .headline{margin-top:28px;font-size:36px;font-weight:600;font-style:italic}
+
+    /* subtle small tagline under the logo if needed */
+    .tag{font-size:14px;margin-top:8px;color:#444}
+
+    /* responsive tweaks */
+    @media (max-width:720px){
+      .brand-row{flex-direction:column}
+      .logo-left img{height:68px}
+      .crest{height:72px}
+      .headline{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="brand-row">
+      <!-- Place the main brand image file in the repo root with this name: komunikasi.jpg -->
+      <div class="logo-left">
+        <img src="komunikasi.jpg" alt="eKomunikasi logo" />
+      </div>
+
+      <!-- vertical divider like in sample (simple line) -->
+      <div style="width:1px;height:96px;background:#e6e6e6;border-radius:2px"></div>
+
+      <!-- crest on the right; place komunikasi-crest.png or use same file if provided -->
+      <img class="crest" src="crest.png" alt="crest" onerror="this.style.display='none'" />
+    </div>
+
+    <div class="headline">Construction Inprogress</div>
+    <div class="tag">Halaman sementara — segera hadir.</div>
+  </div>
+</body>
+</html>
